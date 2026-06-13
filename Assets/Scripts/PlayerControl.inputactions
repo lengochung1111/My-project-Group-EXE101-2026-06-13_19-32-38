@@ -1,0 +1,83 @@
+{
+    "version": 1,
+    "name": "PlayerControl",
+    "maps": [
+        {
+            "name": "Land",
+            "id": "d5ebd460-1a14-407d-bea0-28fe0d50d9a5",
+            "actions": [
+                {
+                    "name": "Move",
+                    "type": "Button",
+                    "id": "2d47758f-f336-4f03-b6de-41de21af8cef",
+                    "expectedControlType": "",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                },
+                {
+                    "name": "Jump",
+                    "type": "Button",
+                    "id": "82fdfab9-50a5-4ccc-9719-fd8fdee12ec9",
+                    "expectedControlType": "",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                }
+            ],
+            "bindings": [
+                {
+                    "name": "",
+                    "id": "d5446045-ae04-41fb-aa48-e3d11d616b3d",
+                    "path": "",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Move",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "91982c82-e65b-41cd-93fe-298fe2e3832d",
+                    "path": "<Keyboard>/space",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Jump",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                }
+            ]
+        },
+        {
+            "name": "Water",
+            "id": "f05fc2be-33c0-4cb4-8d53-5b8425c774d6",
+            "actions": [
+                {
+                    "name": "New action",
+                    "type": "Button",
+                    "id": "933db212-8479-4e1d-975c-f91d2648e2cb",
+                    "expectedControlType": "",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                }
+            ],
+            "bindings": [
+                {
+                    "name": "",
+                    "id": "f5b4df0b-4f5a-47f5-84ec-4d06f57a81f1",
+                    "path": "",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "New action",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                }
+            ]
+        }
+    ],
+    "controlSchemes": []
+}
