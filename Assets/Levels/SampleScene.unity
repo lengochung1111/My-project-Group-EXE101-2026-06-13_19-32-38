@@ -439,9 +439,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 506372f77d36e2d49b928b6995596c71, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Door
-  previousRoom: {fileID: 0}
-  nextRoom: {fileID: 0}
-  cam: {fileID: 0}
 --- !u!1 &335086593
 GameObject:
   m_ObjectHideFlags: 0
@@ -581,13 +578,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8b3ff91368b90c241a11d7bd24a4a773, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::CameraMovement
-  speed: 0
-  currentPosX: 0
-  velocity: {x: 0, y: 0, z: 0}
-  player: {fileID: 0}
-  aheadDistance: 0
-  cameraSpeed: 0
-  lookAhead: 0
 --- !u!1 &1587565319
 GameObject:
   m_ObjectHideFlags: 0
@@ -600,8 +590,8 @@ GameObject:
   - component: {fileID: 1587565322}
   - component: {fileID: 1587565321}
   - component: {fileID: 1587565320}
-  - component: {fileID: 1587565324}
   - component: {fileID: 1587565325}
+  - component: {fileID: 1587565326}
   m_Layer: 0
   m_Name: Player
   m_TagString: Untagged
@@ -756,22 +746,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1587565324
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1587565319}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 22b346e7ef6b0f942a8b382ec585a3b9, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::PlayerMovement
-  speed: 10
-  body: {fileID: 0}
-  anim: {fileID: 0}
-  grounded: 0
 --- !u!95 &1587565325
 Animator:
   serializedVersion: 7
@@ -794,6 +768,21 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
+--- !u!114 &1587565326
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1587565319}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 22b346e7ef6b0f942a8b382ec585a3b9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::PlayerMovement
+  moveSpeed: 5
+  gridSize: 1
+  moveAction: {fileID: -1680190386980627800, guid: 3590b91b4603b465dbb4216d601bff33, type: 3}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
